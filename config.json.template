@@ -1,0 +1,16 @@
+{
+    "graphDB": {
+        "profile": {
+            "protocol": "bolt",
+            "host": "localhost",
+            "port": "7687"
+        },
+        "auth": {
+            "username":"neo4j",
+            "password": "neo4jneo4j"
+        }
+    },
+    "path": {
+        "medical": "data/medical.json"
+    }
+}
