@@ -10,6 +10,18 @@
 
 ## 项目运行方式
 详参`Makefile`
+### 配置Neo4j
+测试学习阶段推荐使用`docker image`方便调试, 安装简便.
+```bash
+docker pull neo4j:4.3
+docker run -it -d -p 7474:7474 -p 7687:7687 neo4j:4.3
+```
+- 之后打开`http://localhost:7474/browser/`
+- 初始账号密码皆为: `neo4j`
+- 登录成功后应该会提示修改密码
+- 完成登陆
+
+* 注意将修改后的账号密码配置到`config.json`
 
 ### docker
 TODO
