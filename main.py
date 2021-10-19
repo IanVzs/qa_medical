@@ -20,7 +20,7 @@ class ReqAskGraphParams(BaseModel):
 def read_root():
     return {"version": "qa_medical_20210412"}
 
-@app.post("/ask_graph/")
+@app.get("/ask_graph/")
 async def ask_graph(content: str):
     data, err = chat_bot.chat_main(content)
     if err != E.SUCCESS:

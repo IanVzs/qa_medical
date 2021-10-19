@@ -1,5 +1,9 @@
 all: run
 
+usedockerdb:
+	docker pull neo4j:4.3
+	docker run -it -d --name neo4j_4_3 -p 7474:7474 -p 7687:7687 neo4j:4.3
+
 init:
 	echo "安装依赖包"
 	pip install -r requirements.txt
