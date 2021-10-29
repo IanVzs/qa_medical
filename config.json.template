@@ -1,0 +1,26 @@
+{
+    "graphDB": {
+        "profile": {
+            "protocol": "bolt",
+            "host": "localhost",
+            "port": "7687"
+        },
+        "auth": {
+            "username":"neo4j",
+            "password": "neo4jneo4j"
+        }
+    },
+    "path": {
+        "medical": "data/medical.json",
+        "classifier": {
+            "disease": "data/dict/disease.txt",
+            "department": "data/dict/department.txt",
+            "check": "data/dict/check.txt",
+            "drug": "data/dict/drug.txt",
+            "food": "data/dict/food.txt",
+            "producer": "data/dict/producer.txt",
+            "symptom": "data/dict/symptom.txt",
+            "deny": "data/dict/deny.txt"
+        }
+    }
+}
