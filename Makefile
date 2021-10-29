@@ -16,4 +16,4 @@ run:
 	uvicorn main:app --reload
 
 help:
-	@echo "make: must `init` first, only run"
+	@echo "make: only run server; must 'make init' first"
